@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>About - Sulistiadi</title>
+</head>
+<body>
+    <header>
+        <diu  class="navbar">
+            <div class="logo"><a href="index.html">MS</a></div>  
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <div Class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            </diu>
+
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="#" class="action_btn">Get Started</a></li>>
+            </div>
+    </header>
+
+    <main>
+        <section id="here">
+            <h1>Mohamad Sulistiadi</h1>
+            <p>
+                Menjelajahi isi dunia, menyimpan semua kenangan di memory, menjelajahi hal-hal baru yang belum pernah terlaksanakan <br>Menyiapkan segala rancangan memecahkan masalah yang akan di-hadapi<br />
+                Traveling atau berjalan-jalan bisa menyembuhkan mental yang sedang down. dan memulai lah dengan orang asing <br>Karena kita dapat belajar dengan hal-hal yang baru.
+            </p>
+
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
